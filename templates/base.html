@@ -1,0 +1,14 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Home{% endblock %}</title>
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    {% block content %}
+    <h1>Hello, World!</h1>
+    {% endblock %}
+  </body>
+</html>
